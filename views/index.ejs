@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Movie</title>
+    <link rel="icon" type="image/x-icon" href="/image/movie icon.png">
+    <link rel="stylesheet" href="style/main_style.css" />
+  </head>
+  <body>
+
+    <% if (locals.title) { %>
+    <div class="container">
+      <div class="title-side">
+        <div class="title-rec"></div>
+        <h1 class="title-text"><%= title %></h1>
+      </div>
+      <div class="poster-side">
+        <img class="poster" src="https://image.tmdb.org/t/p/original<%= poster %>" />
+        <img class="stars" src= "<%= stars %>"/>
+        <form action="/" method="get">
+          <button type="submit" class="change-button">Change</button>
+        </form>
+      </div>
+      <div style="width: 100%"></div>
+    </div>
+    <% } else { %>
+      <div class="error">
+      <p>Refresh again!</p>
+      
+      <form action="/" method="get">
+        <button type="submit" class="change-button">Change</button>
+      </form>
+    </div>
+    <% } %>
+    <script src="/script/script.js"></script>
+  </body>
+</html>
