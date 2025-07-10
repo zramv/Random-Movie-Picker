@@ -1,0 +1,73 @@
+@font-face {
+  font-family: 'Manrope Variable';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 200 800;
+  src: url(https://cdn.jsdelivr.net/fontsource/fonts/manrope:vf@latest/latin-wght-normal.woff2) format('woff2-variations');
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+:root{
+  --dark-bg-color:hsl(225, 15%, 5%);
+  --bg-color:hsl(228, 16%, 6%);
+  --board-color:hsl(218, 11%, 14%);
+  --font-color-primary:hsl(210, 40%, 98%);
+  --font-color-secondary:hsl(215, 20%, 65%);
+  --button-color:hsl(217, 91%, 60%);
+
+  --font-xl:1.25rem;
+  --font-sm:0.875rem;
+  --font-xm:0.750rem;
+  --font-l:1rem;
+  --font-weight-800:800;
+  --font-weight-400:400;
+}
+
+#project-title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--board-color);
+  margin: 20px 0;
+  padding: 20px 0;
+}
+h1{
+  font-weight: var(--font-weight-800);
+}
+#github{
+  background-color: var(--button-color);
+  border-radius: .25rem;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:5px;
+  padding: 0.5rem;
+  height: 40px;
+  font-size: var(--font-sm);
+  text-decoration: none;
+  margin-right: 20px;
+  padding: 10px;
+}
+#github > img {
+  height: 30px;
+}
+.project-image{
+  max-width:800px;
+  width: 100%;
+  margin-bottom: 40px;
+}
+#description{
+  font-size: var(--font-sm);
+  color: var(--font-color-secondary);
+  margin-bottom: 40px;
+}
+
+ul{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  list-style: none;
+  gap: 10px;
+  margin-bottom: 150px;
+}
